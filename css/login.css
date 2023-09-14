@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ffce51, #ff7253, #fd5754);
+
+    animation: tatu 30s infinite ease-in-out;
+}
+
+.container {
+    width: 300px;
+    height: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* animação */
+
+@keyframes tatu {
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: 100% 100%;
+    }
+    50% {
+        background-position: 0 100%;
+    }
+    75% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
