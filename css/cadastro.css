@@ -105,14 +105,6 @@ select {
     border-radius: 0 7px 7px 0;
 }
 
-.passIcon:hover {
-    cursor: pointer;
-    background-color: #00000023;
-}
-
-.passIcon:active {
-    background-color: #00000056;
-}
 
 button {
     padding: 7px 16px;
@@ -135,6 +127,10 @@ button:hover {
     margin-top: 10px;
     display: flex;
     justify-content: center;
+}
+
+.showPassword {
+    margin-left: 5px;
 }
 
 /* animação */

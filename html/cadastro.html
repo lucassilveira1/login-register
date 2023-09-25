@@ -44,7 +44,10 @@
 
         <div class="input-box">
             <label for="cel">Telefone Celular</label>
-            <input type="tel" placeholder="Número de Celular" required id="celular">
+            <div class="input">
+                <input type="tel" placeholder="Número de Celular" required id="celular">
+                <i class="fa-solid fa-mobile"></i>           
+             </div>
         </div>
 
         <div class="input-box">
@@ -62,25 +65,45 @@
 
         <div class="input-box">
             <label for="address">Endereço</label>
-            <input type="text" placeholder="Digite seu endereço completo" required>
+            <div class="input">
+                <input type="text" placeholder="Digite seu endereço completo" required>
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
         </div>
 
         <div class="input-box">
             <label for="login">Login</label>
-            <input type="text" placeholder="Crie um login" required>
+            <div class="input">
+                <input type="text" placeholder="Crie um login" required>
+                <i class="fa-solid fa-user"></i>           
+             </div>
         </div>
 
         <div class="input-box">
             <label for="password">Senha</label>
             <div class="input">
                 <input type="password" placeholder="Crie uma senha" id="password" required>
-                <i class="fa-solid fa-eye passIcon" id="icone" onclick="clique()"></i>
+                <i id="passIcon">
+                    <img src='/assets/lock-solid.svg' width='14px'>
+                </i>         
             </div>
+        </div>
+
+        <div class="showPassword">
+            <input type="checkbox" id="showPassword"> Mostrar senha  
+            <i id="showIcon">
+                <img src='/assets/eye-regular.svg' width='15px'>
+            </i>        
         </div>
 
         <div class="input-box">
             <label for="password">Confirme sua senha</label>
-            <input type="password" placeholder="Confirme sua senha" id="confirm-password" required>
+            <div class="input">
+                <input type="password" placeholder="Confirme sua senha" id="confirm-password" required>
+                <i id="confirmPassIcon">
+                    <img src='/assets/lock-solid.svg' width='14px'>
+                </i> 
+            </div>           
         </div>
         <div class="btn">
             <button type="submit">Cadastrar</button>

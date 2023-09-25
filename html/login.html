@@ -12,19 +12,29 @@
 
         <div class="input-box">
             <label for="login">Login</label>
-            <input type="login" name="" id="login">
+            <input type="login" name="login" id="login">
         </div>
 
         <div class="input-box">
-            <label for="">Senha</label>
-            <input type="password" name="" id="password">
+            <label for="password">Senha</label>
+            <div class="input">
+            <input type="password" name="password" id="password">
+            <i id="passIcon">
+                <img src='/assets/lock-solid.svg' width='14px'>
+            </i>
+            </div>
+        </div>
+
+        <div class="showPassword">
+            <input type="checkbox" name="" id="showPass"> Mostrar senha
+            <i id="showPassIcon"><img src="/assets/eye-regular.svg" width="15px"></i>
         </div>
 
         <div class="btn">
             <button type="submit">Entrar</button>
             <button type="reset" id="reset">Limpar</button>
         </div>
-        <p>Não possui conta? <a href="cadastro.html">Cadastre-se!</a></p>
+        <p class="account">Não possui conta? <a href="cadastro.html"> Cadastre-se!</a></p>
     </div>
 
     <script src="/js/login.js"></script>
